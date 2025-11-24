@@ -1,0 +1,64 @@
+/* ฟอนต์ Pixel */
+@font-face {
+    font-family: 'Pixel';
+    src: url('https://fonts.cdnfonts.com/s/19795/PixelOperator-Bold.woff') format('woff');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#9fd9ff, #6bb8ff); /* ท้องฟ้า */
+    overflow: hidden;
+    font-family: 'Pixel', monospace;
+}
+
+.container {
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* ชื่อเกม */
+.game-title {
+    font-size: 42px;
+    color: #73AF6F;
+    -webkit-text-stroke: 3px #007E6E;
+    text-shadow: 3px #007E6E;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+/* ตัวละครตกลงล่างวน */
+.character {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    image-rendering: pixelated;
+    background: url('https://i.imgur.com/BJc8nq0.png') no-repeat center/cover; /* pixel dummy */
+    animation: fall 2.2s linear infinite;
+    filter: drop-shadow(0 4px 2px #0003);
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100px); opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(600px); opacity: 0; }
+}
+
+/* ปุ่ม START */
+.start-btn {
+    margin-top: 60px;
+    font-family: 'Pixel', monospace;
+    font-size: 28px;
+    color: white;
+    background: #FF937E;
+    border: 3px solid #FF5555;
+    padding: 14px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.start-btn:hover {
+    transform: scale(1.05);
+    background: #ffad99;
+}

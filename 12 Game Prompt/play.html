@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Pixel Fighter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ui">
+    <div id="player-hp" class="hp-bar"><div class="hp-fill"></div></div>
+    <div id="enemy-hp" class="hp-bar enemy"><div class="hp-fill"></div></div>
+    <div id="status" class="status">Controls: A/D or ←→ = move, W/↑ = jump, J = attack</div>
+    <button id="restart">Restart</button>
+  </div>
+  <canvas id="game"></canvas>
+    <div id="gameover-screen" class="hidden">
+  <div class="gameover-box">
+    <h1>Game Over</h1>
+    <div class="buttons">
+      <button id="go-home" class="btn-home">Go Home</button>
+      <button id="restart2" class="btn-restart">Restart</button>
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
