@@ -1,96 +1,31 @@
-:root{
-  --bg:#0b1220;
-  --panel: rgba(0,0,0,0.35);
-  --hp-bg:#333;
-  --hp-fill:#5ce07a;
-  --hp-enemy:#f06b6b;
-}
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;background:var(--bg);font-family:ui-sans-serif,system-ui,Segoe UI,Roboto}
-#game{display:block;width:100vw;height:100vh}
-.ui{
-  position: absolute;
-  left: 12px;
-  top: 12px;
-  z-index: 10;
-  display:flex;
-  gap:10px;
-  align-items:center;
-}
-.hp-bar{
-  width:260px;height:18px;background:var(--hp-bg);border-radius:10px;overflow:hidden;border:2px solid rgba(255,255,255,0.06)
-}
-.hp-bar.enemy{transform:scaleX(-1)} /* mirror enemy bar to right-to-left feel */
-.hp-fill{height:100%;width:100%;background:var(--hp-fill);transition:width 150ms linear}
-.hp-bar.enemy .hp-fill{background:var(--hp-enemy)}
-.status{color:#dfefff;padding:6px 10px;background:var(--panel);border-radius:8px;font-size:13px;opacity:0.95}
-#restart{padding:6px 10px;border-radius:8px;border:none;background:#ffffff22;color:#fff;backdrop-filter:blur(4px);cursor:pointer}
-#restart:hover{background:#ffffff33}
-/* ===== Game Over Overlay ===== */
-#gameover-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-.hidden {
-  display: none;
-}
-
-.gameover-box {
-  background: #d0d0d0;
-  padding: 30px 40px;
-  border-radius: 12px;
-  text-align: center;
-  min-width: 300px;
-  box-shadow: 0 0 20px #00000055;
-}
-
-.gameover-box h1 {
-  margin-top: 0;
-  font-size: 32px;
-  color: #000;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  gap: 20px;
-}
-
-.btn-home {
-  flex: 1;
-  padding: 12px 20px;
-  font-size: 18px;
-  background: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.btn-restart {
-  flex: 1;
-  padding: 12px 20px;
-  font-size: 18px;
-  background: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.btn-home:hover {
-  background: #f0f0f0;
-}
-
-.btn-restart:hover {
-  background: #45a648;
-}
+body {
+    margin: 0;
+    padding: 0;
+    background: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 20px 0 10px;
+  }
+  
+  #ui {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 6px 14px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  canvas {
+    background: #111;
+    border: 2px solid #555;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  

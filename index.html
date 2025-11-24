@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Pixel Fighter</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Block Blast!</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-    <div class="container">
+  <h1>Block Blast!</h1>
+  <div id="ui">
+    <span>Score: <span id="score">0</span></span>
+    <button id="startBtn">Start</button>
+    <button id="restartBtn" style="display:none;">Restart</button>
+  </div>
+  <canvas id="gameCanvas" width="800" height="500"></canvas>
 
-        <div class="game-title">Mini Pixel Fighter</div>
-
-        <!-- ตัวละครตกลงล่างวนลูป -->
-        <div class="character"></div>
-        <a href="play.html">
-            <button class="start-btn">START</button>
-        </a>
-    </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
